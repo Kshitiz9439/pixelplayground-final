@@ -1,0 +1,64 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 266 84% 96%; /* Light Purple */
+    --foreground: 222 84% 4.9%;
+    --card: 266 84% 98%;
+    --card-foreground: 222 84% 4.9%;
+    --popover: 266 84% 98%;
+    --popover-foreground: 222 84% 4.9%;
+    --primary: 266 59% 65%; /* Medium Purple */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 32.6% 92.5%;
+    --secondary-foreground: 222 84% 4.9%;
+    --muted: 217 32.6% 92.5%;
+    --muted-foreground: 215 20.2% 45.1%;
+    --accent: 198 62% 64%; /* Soft Blue */
+    --accent-foreground: 222 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32.6% 87.5%;
+    --input: 217 32.6% 87.5%;
+    --ring: 266 59% 65%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 263 47% 11%; /* Very dark desaturated purple */
+    --foreground: 210 40% 98%;
+    --card: 263 47% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 263 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 266 59% 65%; /* Medium Purple */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 263 47% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 263 47% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 198 62% 64%; /* Soft Blue */
+    --accent-foreground: 210 40% 9.8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 263 47% 20%;
+    --input: 263 47% 20%;
+    --ring: 266 59% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
